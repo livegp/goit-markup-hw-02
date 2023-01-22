@@ -1,0 +1,191 @@
+/*===== Variables =====*/
+:root {
+  /* font */
+  --body-font: "Roboto", sans-serif;
+  --h1-font-size: 56px;
+  --h2-font-size: 36px;
+  --h3-font-size: 20px;
+  --big-font-size: 18px;
+  --normal-font-size: 16px;
+  --small-font-size: 12px;
+  /* Font weight */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+  --font-heavy: 900;
+  /* Color */
+  --accent-color: #4d5ae5;
+  --light-color: #ffffff;
+  --dark-color: #2e2f42;
+  --alt-color: #f4f4fd;
+
+  --btn-bgd-color-accent: #e7e9fc;
+  --btn-bgd-color-active: #404bbf;
+  --modal-bgd-color: rgba(46, 47, 66, 0.4);
+  --hero-bgd-color: rgba(46, 47, 66, 0.7);
+  --valid-bgd-color: #31d0aa;
+  --body-text-color: #434455;
+  --body-text-color-light: #e7e9fc;
+  --modal-text-color: #8e8f99;
+  /* --hero-color: #2e2f42; */
+}
+
+/*========== Base ==========*/
+body {
+  font-family: var(--body-font);
+  background-color: var(--light-color);
+  font-size: var(--normal-font-size);
+  color: var(--body-text-color);
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  color: var(--nav-text-color);
+  text-align: center;
+  color: var(--light-color);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  color: var(--nav-text-color);
+  text-align: center;
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+  color: var(--nav-text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*========== Studio ==========*/
+.logo {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+}
+
+.logo-color {
+  color: var(--accent-color);
+}
+
+.logo-dark {
+  color: var(--dark-color);
+}
+
+.logo-light {
+  color: var(--body-text-color-light);
+}
+
+.nav-link {
+  font-weight: var(--font-medium);
+  line-height: 1.5x;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+
+.address-link {
+  color: var(--body-text-color);
+  font-weight: var(--font-regular);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-style: normal;
+}
+
+.hero {
+  background-color: var(--dark-color);
+}
+
+.title {
+  font-weight: var(--font-bold);
+  font-size: var(--h1-font-size);
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+.btn-one {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  font-weight: var(--font-medium);
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.scills-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--nav-text-color);
+}
+
+.scills-text {
+  font-weight: var(--font-regular);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.team {
+  background-color: var(--body-bgd-color-alt);
+}
+
+.team-title {
+  font-weight: var(--font-medium);
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.team-text {
+  font-weight: var(--font-regular);
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.footer {
+  background-color: var(--dark-color);
+}
+
+.footer-text {
+  color: var(--body-text-color-light);
+  font-weight: var(--font-regular);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/*========== Portfolio ==========*/
+.btn-two {
+  font-weight: var(--font-medium);
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--accent-color);
+  background-color: var(--alt-color);
+}
+
+.btn-two:hover {
+  color: var(--light-color);
+  background-color: var(--btn-bgd-color-active);
+}
+
+.work-title {
+  color: var(--dark-color);
+  font-weight: var(--font-medium);
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.work-text {
+  color: var(--body-text-color);
+  font-weight: var(--font-regular);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
