@@ -5,10 +5,10 @@
   --color-light: #ffffff;
   --color-alt: #f4f4fd;
   --color-accent: #4d5ae5;
+  --color-active: #404bbf;
   --color-text-light: #e7e9fc;
   --color-text-modal: #8e8f99;
   --color-text-body: #434455;
-  --color-bgd-active: #404bbf;
   --color-bgd-accent: #e7e9fc;
   --color-bgd-hero: rgba(46, 47, 66, 0.7);
   --color-bgd-modal: rgba(46, 47, 66, 0.4);
@@ -70,6 +70,11 @@ ul {
   line-height: 1.5;
 }
 
+.nav-link:active,
+.address-link:active {
+  color: var(--color-active);
+}
+
 .nav-link {
   color: var(--color-dark);
   font-weight: var(--font-medium);
@@ -89,6 +94,10 @@ ul {
 .hero-btn,
 .hero-title {
   color: var(--color-light);
+}
+
+.hero-btn:hover {
+  background-color: var(--color-active);
 }
 
 .hero-title {
@@ -160,7 +169,7 @@ ul {
 
 .btns:hover,
 .btns:focus {
-  background-color: var(--color-bgd-active);
+  background-color: var(--color-active);
   color: var(--color-light);
 }
 
