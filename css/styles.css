@@ -158,7 +158,8 @@ ul {
   cursor: pointer;
 }
 
-.btns:hover {
+.btns:hover,
+.btns:focus {
   background-color: var(--color-bgd-active);
   color: var(--color-light);
 }
