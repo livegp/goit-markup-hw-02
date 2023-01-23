@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav>
-        <a class="logo" href="./index.html"
-          ><span class="logo-color">Web</span
-          ><span class="logo-dark">Studio</span></a
+        <a class="logo logo-dark" href="./index.html"
+          ><span class="logo-color">Web</span>Studio</a
         >
         <ul class="nav">
           <li>
@@ -45,19 +46,18 @@
       </address>
     </header>
     <main>
-      <h1>Portfolio</h1>
+      <h1 class="hidden">Portfolio</h1>
       <ul>
-        <li>
-          <button class="btns" type="button">All</button>
-        </li>
-        <li><button class="btns" type="button">Web Site</button></li>
-        <li><button class="btns" type="button">App</button></li>
-        <li><button class="btns" type="button">Design</button></li>
-        <li><button class="btns" type="button">Marketing</button></li>
+        <li><button class="work-btn" type="button">All</button></li>
+        <li><button class="work-btn" type="button">Web Site</button></li>
+        <li><button class="work-btn" type="button">App</button></li>
+        <li><button class="work-btn" type="button">Design</button></li>
+        <li><button class="work-btn" type="button">Marketing</button></li>
       </ul>
+      <h2 class="hidden">Work</h2>
       <ul class="work">
         <li>
-          <a href=""
+          <a class="work-link" href=""
             ><img
               src="./images/portfolio/banking_app.jpg"
               alt="An image of an example of a banking application"
@@ -68,7 +68,7 @@
           </a>
         </li>
         <li>
-          <a href=""
+          <a class="work-link" href=""
             ><img
               src="./images/portfolio/cashless_payment.jpg"
               alt="Image of payment by QR code"
@@ -79,7 +79,7 @@
           </a>
         </li>
         <li>
-          <a href=""
+          <a class="work-link" href=""
             ><img
               src="./images/portfolio/meditaion_app.jpg"
               alt="An image of a laptop and a smartphone"
@@ -90,7 +90,7 @@
           </a>
         </li>
         <li>
-          <a href=""
+          <a class="work-link" href=""
             ><img
               src="./images/portfolio/taxi_service.jpg"
               alt="Image of a car"
@@ -101,7 +101,7 @@
           </a>
         </li>
         <li>
-          <a href=""
+          <a class="work-link" href=""
             ><img
               src="./images/portfolio/screen_illustrations.jpg"
               alt="Image of screenshots"
@@ -112,7 +112,7 @@
           </a>
         </li>
         <li>
-          <a href=""
+          <a class="work-link" href=""
             ><img
               src="./images/portfolio/online_courses.jpg"
               alt="Image of a girl with a smartphone"
@@ -123,7 +123,7 @@
           </a>
         </li>
         <li>
-          <a href=""
+          <a class="work-link" href=""
             ><img
               src="./images/portfolio/instagram_stories.jpg"
               alt="Instagram Stories concept image"
@@ -134,7 +134,7 @@
           </a>
         </li>
         <li>
-          <a href=""
+          <a class="work-link" href=""
             ><img
               src="./images/portfolio/organic_food.jpg"
               alt="Image of fruits and vegetables in a bag"
@@ -145,7 +145,7 @@
           </a>
         </li>
         <li>
-          <a href=""
+          <a class="work-link" href=""
             ><img
               src="./images/portfolio/fresh_coffee.jpg"
               alt="Image of a barista pouring coffee"
@@ -158,9 +158,8 @@
       </ul>
     </main>
     <footer class="footer">
-      <a class="logo" href="./index.html"
-        ><span class="logo-color">Web</span
-        ><span class="logo-light">Studio</span></a
+      <a class="logo logo-light" href="./index.html"
+        ><span class="logo-color">Web</span>Studio</a
       >
       <p class="footer-text">
         Increase the flow of customers and sales for your business with digital

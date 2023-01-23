@@ -1,5 +1,5 @@
 :root {
-  --font: Roboto, sans-serif;
+  --font: "Roboto", sans-serif;
 
   --color-dark: #2e2f42;
   --color-light: #ffffff;
@@ -43,8 +43,22 @@ ul {
   list-style: none;
 }
 
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .logo {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: var(--font-size-big);
   font-weight: var(--font-black);
   letter-spacing: 0.03em;
@@ -70,9 +84,18 @@ ul {
   line-height: 1.5;
 }
 
-.nav-link:active,
-.address-link:active {
-  color: var(--color-active);
+.nav-link:hover,
+.address-link:hover,
+.logo:hover,
+.work-title:hover,
+.work-text:hover,
+.nav-link:focus,
+.address-link:focus,
+.logo:focus,
+.work-title:focus,
+.work-text:focus,
+{
+color: var(--color-active);
 }
 
 .nav-link {
@@ -96,10 +119,6 @@ ul {
   color: var(--color-light);
 }
 
-.hero-btn:hover {
-  background-color: var(--color-active);
-}
-
 .hero-title {
   font-size: var(--font-size-h1);
   font-weight: var(--font-bold);
@@ -116,13 +135,29 @@ ul {
   cursor: pointer;
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--color-active);
+}
+
+.hero-btn,
+.work-btn {
+  font-family: var(--font);
+  font-size: var(--font-size-normal);
+}
+
 .scills-subtitle,
 .team-subtitle {
-  color: var(--nav-text-color);
+  color: var(--color-dark);
   font-size: var(--font-size-h3);
   font-weight: var(--font-medium);
   letter-spacing: 0.02em;
   line-height: 1.2;
+}
+
+.team-subtitle,
+.team-text {
+  background-color: var(--color-light);
 }
 
 .scills-text,
@@ -133,10 +168,9 @@ ul {
   line-height: 1.5;
 }
 
-.scills-title,
 .doing-title,
 .team-title {
-  color: var(--nav-text-color);
+  color: var(--color-dark);
   font-size: var(--font-size-h2);
   font-weight: var(--font-bold);
   letter-spacing: 0.02em;
@@ -158,7 +192,7 @@ ul {
   color: var(--color-text-light);
 }
 
-.btns {
+.work-btn {
   background-color: var(--color-alt);
   color: var(--color-accent);
   font-weight: var(--font-medium);
@@ -167,8 +201,8 @@ ul {
   cursor: pointer;
 }
 
-.btns:hover,
-.btns:focus {
+.work-btn:hover,
+.work-btn:focus {
   background-color: var(--color-active);
   color: var(--color-light);
 }
