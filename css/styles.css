@@ -154,8 +154,7 @@ ul {
   line-height: 1.2;
 }
 
-.team-subtitle,
-.team-text {
+.team-list {
   background-color: var(--color-light);
 }
 
