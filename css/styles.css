@@ -93,9 +93,8 @@ ul {
 .address-link:focus,
 .logo:focus,
 .work-title:focus,
-.work-text:focus,
-{
-color: var(--color-active);
+.work-text:focus {
+  color: var(--color-active);
 }
 
 .nav-link {
