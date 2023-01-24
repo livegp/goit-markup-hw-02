@@ -1,25 +1,21 @@
 :root {
   --font: "Roboto", sans-serif;
-
   --color-dark: #2e2f42;
   --color-light: #ffffff;
   --color-alt: #f4f4fd;
   --color-accent: #4d5ae5;
   --color-active: #404bbf;
   --color-text-light: #e7e9fc;
-  --color-text-modal: #8e8f99;
-  --color-text-body: #434455;
-  --color-bgd-accent: #e7e9fc;
-  --color-bgd-hero: rgba(46, 47, 66, 0.7);
-  --color-bgd-modal: rgba(46, 47, 66, 0.4);
-  --color-bgd-valid: #31d0aa;
-
+  --color-text-dark: #434455;
+  /* --color-text-modal: #8e8f99; */
+  /* --color-bgd-hero: rgba(46, 47, 66, 0.7); */
+  /* --color-bgd-modal: rgba(46, 47, 66, 0.4); */
+  /* --color-bgd-valid: #31d0aa; */
   --font-heavy: 900;
   --font-black: 800;
   --font-bold: 700;
   --font-medium: 500;
   --font-regular: 400;
-
   --font-size-h1: 56px;
   --font-size-h2: 36px;
   --font-size-h3: 20px;
@@ -27,22 +23,18 @@
   --font-size-normal: 16px;
   --font-size-small: 12px;
 }
-
 body {
   background-color: var(--color-light);
-  color: var(--color-text-body);
+  color: var(--color-text-dark);
   font-family: var(--font);
   font-size: var(--font-size-normal);
 }
-
 a {
   text-decoration: none;
 }
-
 ul {
   list-style: none;
 }
-
 .hidden {
   position: absolute;
   width: 1px;
@@ -55,7 +47,6 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 .logo {
   color: var(--color-accent);
   font-family: "Raleway", sans-serif;
@@ -65,21 +56,12 @@ ul {
   line-height: 1.33;
   text-transform: uppercase;
 }
-
 .logo-header {
   color: var(--color-dark);
 }
-
 .logo-footer {
   color: var(--color-alt);
 }
-
-.nav-link,
-.address-link {
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-}
-
 .nav-link:hover,
 .address-link:hover,
 .logo:hover,
@@ -96,106 +78,97 @@ ul {
 .work-text:focus {
   color: var(--color-active);
 }
-
 .nav-link {
   color: var(--color-dark);
   font-weight: var(--font-medium);
 }
-
-.address-link {
-  color: var(--color-text-body);
-  font-weight: var(--font-regular);
+.address-link,
+.work-text {
+  color: var(--color-text-dark);
   font-style: normal;
 }
-
 .hero,
 .footer {
   background-color: var(--color-dark);
 }
-
-.hero-btn,
-.hero-title {
-  color: var(--color-light);
-}
-
-.hero-title {
-  font-size: var(--font-size-h1);
-  font-weight: var(--font-bold);
-  letter-spacing: 0.02em;
-  line-height: 1.07;
-  text-align: center;
-}
-
-.hero-btn {
-  background-color: var(--color-accent);
-  font-weight: var(--font-medium);
-  letter-spacing: 0.04em;
-  line-height: 1.5;
-  cursor: pointer;
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: var(--color-active);
-}
-
 .hero-btn,
 .work-btn {
   font-family: inherit;
   font-size: inherit;
 }
-
 .team-list {
   background-color: var(--color-light);
 }
-
+.nav-link,
+.address-link,
 .skills-text,
 .team-text,
-.footer-text {
-  font-weight: var(--font-regular);
+.footer-text,
+.work-text {
   letter-spacing: 0.02em;
   line-height: 1.5;
 }
-
+.address-link,
+.skills-text,
+.team-text,
+.footer-text,
+.work-text {
+  font-weight: var(--font-regular);
+}
+.hero-title {
+  font-size: var(--font-size-h1);
+  line-height: 1.07;
+}
+.hero-title,
+.doing-title,
+.team-title {
+  font-weight: var(--font-bold);
+  letter-spacing: 0.02em;
+  text-align: center;
+}
 .doing-title,
 .team-title {
   color: var(--color-dark);
   font-size: var(--font-size-h2);
-  font-weight: var(--font-bold);
-  letter-spacing: 0.02em;
   line-height: 1.11;
-  text-align: center;
   text-transform: capitalize;
 }
-
 .team {
   background-color: var(--color-alt);
 }
-
 .team-subtitle,
 .team-text {
   text-align: center;
 }
-
 .footer-text {
   color: var(--color-text-light);
 }
-
+.hero-btn {
+  background-color: var(--color-accent);
+}
+.hero-btn,
 .work-btn {
-  background-color: var(--color-alt);
-  color: var(--color-accent);
   font-weight: var(--font-medium);
   letter-spacing: 0.04em;
   line-height: 1.5;
   cursor: pointer;
 }
-
+.work-btn {
+  background-color: var(--color-alt);
+  color: var(--color-accent);
+}
+.hero-btn,
+.hero-title,
+.work-btn:hover,
+.work-btn:focus {
+  color: var(--color-light);
+}
+.hero-btn:hover,
+.hero-btn:focus,
 .work-btn:hover,
 .work-btn:focus {
   background-color: var(--color-active);
-  color: var(--color-light);
 }
-
 .skills-subtitle,
 .team-subtitle,
 .work-subtitle {
@@ -204,11 +177,4 @@ ul {
   font-weight: var(--font-medium);
   letter-spacing: 0.02em;
   line-height: 1.2;
-}
-
-.work-text {
-  color: var(--color-text-body);
-  font-weight: var(--font-regular);
-  letter-spacing: 0.02em;
-  line-height: 1.5;
 }
