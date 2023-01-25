@@ -62,18 +62,13 @@ ul {
 .logo-footer {
   color: var(--color-alt);
 }
+.nav-link.activ,
 .nav-link:hover,
 .address-link:hover,
-.logo:hover,
-.logo:hover .logo-header,
-.logo:hover .logo-footer,
 .work-subtitle:hover,
 .work-text:hover,
 .nav-link:focus,
 .address-link:focus,
-.logo:focus,
-.logo:focus .logo-header,
-.logo:focus .logo-footer,
 .work-subtitle:focus,
 .work-text:focus {
   color: var(--color-active);
